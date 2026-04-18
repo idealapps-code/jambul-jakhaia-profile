@@ -177,8 +177,8 @@
             }
 
             .profile-photo {
-                width: 150px;
-                height: 150px;
+                width: 300px;
+                height: 300px;
                 border-radius: 50%;
                 border: 4px solid rgba(255, 255, 255, 0.2);
                 object-fit: cover;
@@ -423,6 +423,9 @@
                 font-size: 16px;
                 word-break: break-all;
             }
+            .hidden {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -432,7 +435,7 @@
                     <a href="/" title="ქართული"><img src="https://flagcdn.com/w40/ge.png" alt="Georgian Flag" style="width: 24px; height: 18px; object-fit: cover; border-radius: 3px; box-shadow: 0 0 3px rgba(0,0,0,0.3); opacity: 0.5; transition: opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.5"></a>
                     <a href="/en/" title="English"><img src="https://flagcdn.com/w40/gb.png" alt="British Flag" style="width: 24px; height: 18px; object-fit: cover; border-radius: 3px; box-shadow: 0 0 3px rgba(0,0,0,0.3);"></a>
                 </div>
-                <img src="https://ui-avatars.com/api/?name=Jambul+Jakhaia&background=3b82f6&color=fff&size=150" alt="Jambul Jakhaia Photo" class="profile-photo" />
+                <img src="/img/profile.jpg" alt="Jambul Jakhaia Photo" class="profile-photo" />
                 <h1>Jambul Jakhaia</h1>
                 <p>System Administrator • DevOps Engineer • Software Engineer</p>
             </header>
@@ -478,7 +481,7 @@
                         <ul class="skill-list">
                             <li><span class="icon">✓</span> Clean Code & SOLID Principles</li>
                             <li><span class="icon">✓</span> API Design (REST / GraphQL)</li>
-                            <li><span class="icon">✓</span> Event-Driven Architecture</li>
+                            <li><span class="icon">✓</span> Microservices</li>
                             <li><span class="icon">✓</span> Testing & Code Quality (TDD)</li>
                             <li><span class="icon">✓</span> Data Modeling (SQL / NoSQL)</li>
                         </ul>
@@ -489,29 +492,44 @@
                 <h2 class="section-title" style="margin-top: 50px;"><i class="fas fa-briefcase"></i> Work Experience</h2>
                 <div class="experience-timeline">
                     <div class="timeline-item">
-                        <div class="timeline-title">Lead Platform Engineer</div>
-                        <div class="timeline-company">FinTech Global / Cloud Infrastructure | 2024 - 2026</div>
-                        <div class="timeline-desc">Architecting robust multi-region infrastructure on AWS and GCP. Led the migration to a fully containerized Kubernetes architecture, engineered internal API systems with Node.js and Python, and automated compliance and security tooling across the software lifecycle.</div>
+                        <div class="timeline-title">Technical Director / Co-owner</div>
+                        <div class="timeline-company">NAMESPACE LLC | January 2025 – Present</div>
+                        <div class="timeline-desc">Defining the company's technical strategy, planning infrastructure, and making core architectural decisions. Leading technical teams and managing the development of new technological products.</div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-title">DevOps & Backend Engineer</div>
-                        <div class="timeline-company">DataDrive Analytics | 2021 - 2024</div>
-                        <div class="timeline-desc">Built and maintained scalable data ingestion microservices using Docker, RESTful APIs, and NoSQL databases. Established continuous integration and deployment (CI/CD) workflows with GitLab CI and Terraform to cut deployment times by over 80%.</div>
+                        <div class="timeline-title">System Administrator / DevOps</div>
+                        <div class="timeline-company">WEBINTELIGENCE LLC | January 2025 – Present</div>
+                        <div class="timeline-desc">Managing and automating cloud infrastructure. Architecting CI/CD pipelines, containerization (Docker, Kubernetes), and ensuring secure, reliable deployment processes across environments.</div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-title">Linux System Administrator</div>
-                        <div class="timeline-company">NetServe Solutions | 2018 - 2021</div>
-                        <div class="timeline-desc">Administered and resolved complex system issues across over 200 virtualized Linux servers (CentOS/Ubuntu). Hardened network security, handled automated daily backups, and introduced monitoring via Prometheus and Grafana for proactive outage prevention.</div>
+                        <div class="timeline-title">System Administrator / Programmer</div>
+                        <div class="timeline-company">SULAKAURI PUBLISHING LLC | January 2025 – Present</div>
+                        <div class="timeline-desc">Ensuring the flawless operation of the publishing house's web platforms and internal systems. Administrating web servers, optimizing databases, and developing necessary software modules.</div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-title">Linux System Administrator</div>
-                        <div class="timeline-company">NetServe Solutions | 2018 - 2021</div>
-                        <div class="timeline-desc">Administered and resolved complex system issues across over 200 virtualized Linux servers (CentOS/Ubuntu). Hardened network security, handled automated daily backups, and introduced monitoring via Prometheus and Grafana for proactive outage prevention.</div>
+                        <div class="timeline-title">System Administrator / Programmer</div>
+                        <div class="timeline-company">SUPERSTORE LLC | January 2025 – Present</div>
+                        <div class="timeline-desc">Full management of the website and its server infrastructure. Ensuring the platform's flawless operation, security, and continuous updates.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-title">Technical Director / Co-owner</div>
+                        <div class="timeline-company">HOSTNODES LLC | April 2016 – January 2025</div>
+                        <div class="timeline-desc">Full management and development of the hosting provider's infrastructure. Provisioning environments, administering client servers, monitoring network architecture, and ensuring high availability (HA).</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-title">System Administrator</div>
+                        <div class="timeline-company">SETANTA SPORT GEORGIA | September 2017 – September 2019</div>
+                        <div class="timeline-desc">Administration of the company's website and its underlying infrastructure. Managing servers to meet operational demands and supporting stable platform performance.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-title">System Administrator</div>
+                        <div class="timeline-company">GOAL.GE | September 2015 – September 2020</div>
+                        <div class="timeline-desc">Maintaining server infrastructure for a high-traffic sports portal. Implementing load balancing, caching mechanisms, and optimizing databases to ensure fast user access during peak traffic hours.</div>
                     </div>
                 </div>
 
                 <!-- Projects Section -->
-                <h2 class="section-title" style="margin-top: 50px;"><i class="fas fa-rocket"></i> Featured Projects</h2>
+                <h2 class="section-title hidden" style="margin-top: 50px;"><i class="fas fa-rocket"></i> Featured Projects</h2>
                 <div class="projects-grid" id="projectsGrid">
                     <!-- Projects will be dynamically loaded here by JavaScript -->
                 </div>
@@ -597,30 +615,30 @@
             });
 
             const allProjects = [
-                {
-                    title: "Scalable eCommerce API",
-                    icon: "fa-network-wired",
-                    desc: "A highly scalable GraphQL backend service using Node.js, built to serve over 10,000 requests per minute with an automated continuous delivery pipeline over Kubernetes.",
-                    tags: ["Node.js", "GraphQL", "Kubernetes"]
-                },
-                {
-                    title: "Automated Server Provisioning",
-                    icon: "fa-shield-alt",
-                    desc: "An Ansible and Terraform-based infrastructure-as-code repository that automatically provisions and configures secure base servers within 5 minutes.",
-                    tags: ["Ansible", "Terraform", "AWS"]
-                },
-                {
-                    title: "Real-time Monitoring Dashboard",
-                    icon: "fa-chart-line",
-                    desc: "A custom centralized dashboard built specifically to aggregate server metrics into a single pane of glass, offering real-time alerting to Discord via Webhooks.",
-                    tags: ["React", "Python (FastAPI)", "Prometheus"]
-                },
-                {
-                    title: "Distributed Log Analyzer",
-                    icon: "fa-database",
-                    desc: "A highly concurrent log aggregation pipeline capable of processing gigabytes of access logs to identify security threats, DDoS attacks, and system failures rapidly.",
-                    tags: ["Go", "ELK Stack", "Docker"]
-                }
+                // {
+                //     title: "Scalable eCommerce API",
+                //     icon: "fa-network-wired",
+                //     desc: "A highly scalable GraphQL backend service using Node.js, built to serve over 10,000 requests per minute with an automated continuous delivery pipeline over Kubernetes.",
+                //     tags: ["Node.js", "GraphQL", "Kubernetes"]
+                // },
+                // {
+                //     title: "Automated Server Provisioning",
+                //     icon: "fa-shield-alt",
+                //     desc: "An Ansible and Terraform-based infrastructure-as-code repository that automatically provisions and configures secure base servers within 5 minutes.",
+                //     tags: ["Ansible", "Terraform", "AWS"]
+                // },
+                // {
+                //     title: "Real-time Monitoring Dashboard",
+                //     icon: "fa-chart-line",
+                //     desc: "A custom centralized dashboard built specifically to aggregate server metrics into a single pane of glass, offering real-time alerting to Discord via Webhooks.",
+                //     tags: ["React", "Python (FastAPI)", "Prometheus"]
+                // },
+                // {
+                //     title: "Distributed Log Analyzer",
+                //     icon: "fa-database",
+                //     desc: "A highly concurrent log aggregation pipeline capable of processing gigabytes of access logs to identify security threats, DDoS attacks, and system failures rapidly.",
+                //     tags: ["Go", "ELK Stack", "Docker"]
+                // }
             ];
 
             let loadedProjectsCount = 0;
